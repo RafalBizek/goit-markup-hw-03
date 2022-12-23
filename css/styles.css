@@ -16,6 +16,10 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /*main menu and contact in header*/
 .header__menu-link,
 .header__contact-link,
@@ -64,7 +68,6 @@ body {
 /*heading and button w section header*/
 .headline {
   text-align: center;
-  background-color: var(--bg-header);
 }
 
 .headline__main-headline {
@@ -74,6 +77,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--color-first);
+  background-color: var(--bg-header);
 }
 
 .headline__button {
@@ -120,7 +124,7 @@ body {
   color: var(--color-second);
 }
 
-.what-we-do__title::first-letter {
+.what-we-do::first-letter {
   text-transform: uppercase;
 }
 
