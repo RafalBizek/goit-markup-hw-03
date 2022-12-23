@@ -21,6 +21,23 @@ body {
   margin: 0 auto;
 }
 /*main menu and contact in header*/
+.header,
+.header__nav,
+.header__menu,
+.header__contact {
+  display: flex;
+}
+
+.header {
+  --color-border-header: #ececec;
+  border-bottom: 1px solid var(--color-border-header);
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.header__nav {
+  align-items: center;
+}
 .header__menu-link,
 .header__contact-link,
 .header__logo {
@@ -30,6 +47,14 @@ body {
 .header__menu-item,
 .header__contact-item {
   list-style: none;
+}
+
+.header__menu-item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.header__logo {
+  margin-right: 93px;
 }
 
 .header__logo {
@@ -63,6 +88,10 @@ body {
   font-weight: 500;
   line-height: 1.17;
   color: var(--color-third);
+}
+
+.header__contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /*heading and button w section header*/
