@@ -24,7 +24,7 @@ h3,
 p,
 ul {
   margin: 0;
-  /* padding:0; */
+  padding:0;
 }
 .container {
   max-width: 1200px;
@@ -224,6 +224,7 @@ ul {
 
 .team__card-item {
   --color-shadow: #f5f4fa;
+  max-width: 270px;
   flex-basis: calc((100% - 3 * var(--space-gap)) / 4);
   background-color: var(--color-first);
   text-align: center;
@@ -268,10 +269,6 @@ ul {
   display: block;
 }
 
-.footer__logo {
-  margin-left: 40px;
-}
-
 .footer__logo,
 .footer__contact-link,
 .footer__contact-item .footer__contact-link-location {
@@ -308,6 +305,7 @@ ul {
 .filters {
   display: flex;
   justify-content: center;
+  margin-bottom: 49.63px;
 }
 .filters__item,
 .card {
@@ -339,22 +337,43 @@ ul {
 }
 
 /*cards of projects*/
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-gap);
+}
 .card__img {
   --border-project-color: #eeeeee;
-  border: 1px solid var(--border-project-color);
+  max-width: 370px;
+  flex-basis: calc((100% - 2 * var(--space-gap)) / 3);
+  /* border: 1px solid var(--border-project-color); */
+  border-left: 1px solid var(--border-project-color);
+  border-bottom: 1px solid var(--border-project-color);
+  border-right: 1px solid var(--border-project-color);
 }
+
+/* .card__box-title {
+  margin: 19.85px 24px 19.85px 24px;;
+  border-left: 1px solid var(--border-project-color);
+  border-bottom: 1px solid var(--border-project-color);
+  border-right: 1px solid var(--border-project-color);
+} */
+
 .card__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   color: var(--color-second);
   letter-spacing: 0.06em;
+  margin-bottom: 3.97px;
+  margin: 19.85px 24px 3.97px 24px;
 }
 
 .card__subtitle {
   font-size: 16px;
   line-height: 1.87;
   color: var(--color-third);
+  margin: 0 24px 19.85px 24px;
 }
 
 .card__title::first-letter,
