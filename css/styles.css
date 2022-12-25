@@ -24,7 +24,7 @@ h3,
 p,
 ul {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 .container {
   max-width: 1200px;
@@ -37,9 +37,13 @@ ul {
 /*main menu and contact in header*/
 .header,
 .header__nav,
-.header__menu,
+.header__menu {
+  display: flex;
+}
+
 .header__contact {
   display: flex;
+  align-items: center;
 }
 
 .header {
@@ -168,10 +172,6 @@ ul {
   line-height: 1.71;
 }
 /*what we do section*/
-.what-we-do {
-  /* margin-top: 94px; */
-}
-
 .what-we-do__title {
   font-weight: 700;
   font-size: 36px;
@@ -191,6 +191,7 @@ ul {
 }
 
 .what-we-do__card {
+  max-width: 370px;
   list-style: none;
   flex-basis: calc((100% - 2 * var(--space-gap)) / 3);
 }
@@ -210,6 +211,7 @@ ul {
   line-height: 1.16;
   text-align: center;
   color: var(--color-second);
+  margin-bottom: 50px;
 }
 
 .team__main-title::first-letter {
@@ -217,7 +219,6 @@ ul {
 }
 
 .team__cards {
-  margin-top: 50px;
   display: flex;
   gap: var(--space-gap);
 }
@@ -266,7 +267,7 @@ ul {
   color: var(--logo-basic-color);
   padding-top: 60px;
   margin-bottom: 20px;
-  display: block;
+  display: inline-block;
 }
 
 .footer__logo,
@@ -281,6 +282,7 @@ ul {
 
 .footer__contact {
   padding-bottom: 60px;
+  display: inline-block;
 }
 
 .footer__contact-link,
@@ -346,22 +348,15 @@ ul {
   --border-project-color: #eeeeee;
   max-width: 370px;
   flex-basis: calc((100% - 2 * var(--space-gap)) / 3);
-  /* border: 1px solid var(--border-project-color); */
   border-left: 1px solid var(--border-project-color);
   border-bottom: 1px solid var(--border-project-color);
   border-right: 1px solid var(--border-project-color);
 }
 
-/* .card__box-title {
-  margin: 19.85px 24px 19.85px 24px;;
-  border-left: 1px solid var(--border-project-color);
-  border-bottom: 1px solid var(--border-project-color);
-  border-right: 1px solid var(--border-project-color);
-} */
-
 .card__title {
   font-size: 18px;
   font-weight: 700;
+  text-transform: capitalize;
   line-height: 2;
   color: var(--color-second);
   letter-spacing: 0.06em;
@@ -379,4 +374,8 @@ ul {
 .card__title::first-letter,
 .card__subtitle::first-letter {
   text-transform: capitalize;
+}
+
+.card__title-small {
+  text-transform: lowercase;
 }
