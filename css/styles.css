@@ -115,7 +115,6 @@ ul {
 /*heading and button w section header*/
 .headline {
   text-align: center;
-  margin-top: 47px;
   background-color: var(--bg-header);
 }
 
