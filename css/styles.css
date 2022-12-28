@@ -49,7 +49,7 @@ ul {
 .header {
   --color-border-header: #ececec;
   border-bottom: 1px solid var(--color-border-header);
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 32px 0;
 }
 
@@ -126,11 +126,13 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--color-first);
+  padding-top: 200px;
 }
 
 .headline__button {
   max-width: 200px;
   margin-top: 30px;
+  margin-bottom: 200px;
   padding: 10px 42px 10px 41px;
   border: none;
   border-radius: 4px;
